@@ -1,0 +1,51 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 530px;
+  .top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+  }
+  p {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 29px;
+    color: #8a8a8a;
+  }
+}
+
+@media (max-width: 540px) {
+  .wrapper {
+    h1 {
+      font-size: 24px;
+      font-weight: 600;
+    }
+    svg {
+      width: 140px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    gap: 10px;
+    h1 {
+      font-size: 22px;
+      line-height: 26px;
+    }
+    p {
+      font-size: 20px;
+    }
+    svg {
+      width: 120px;
+    }
+  }
+}

@@ -1,0 +1,108 @@
+.loginByCode {
+  padding: 0;
+  color: grey;
+  transition: all 0.5s all;
+
+  &:hover {
+    color: black;
+  }
+}
+
+.faq {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  .tooltip {
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    h2 {
+      color: black;
+      font-size: 14px;
+      line-height: normal;
+    }
+
+    p {
+      font-size: 12px;
+      line-height: normal;
+      color: grey;
+    }
+  }
+}
+
+.content {
+  max-width: 512px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+  margin-top: 4px;
+
+  .header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+  }
+
+  .iconBtn {
+    position: absolute;
+    left: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    &:hover .undoIcon {
+      opacity: 0.8;
+    }
+  }
+
+  .undoIcon {
+    width: 24px;
+    height: 24px;
+    color: #000;
+  }
+
+  .logoWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+  }
+
+  .description,
+  .timerText {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    color: grey;
+  }
+
+  .getCode {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .resendCode {
+    button {
+      height: 20px;
+      padding: 0;
+      font-size: 16px;
+      font-weight: 500;
+      color: grey;
+      cursor: pointer;
+    }
+  }
+}
